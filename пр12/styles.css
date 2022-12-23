@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Audiowide";
+  padding: 10px;
+  color: #B1D4E0;
+  background: #5885AF;
+}
+
+header {
+  z-index:100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #41729F;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/*селектор класса (специфицирует элемент, маркированный нами как класс с данным названием. несколько элементов могут быть одного класса)*/
+.wrap-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header a { /*отвечает за навигацию*/
+  color: #000;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 10px;
+  background-color: #274472;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+  padding: 0%;
+  position:relative;
+  top:5px;
+  }
+
+.card {
+  display: block;
+  background-color: #41729F;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+footer
+        {
+           background-color: #274472;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: [dark] max-content [foot_div] repeat(1, 250px),140px [lastline];
+            place-items: center/center;
+            gap: 20px;
+        }
+
+        .foot_div h3{
+            display: block;
+            font-size: 1.3em;
+            font-weight: 800;
+            color: #80bdff;
+            width:100%;
+        }
+        .foot_div a, .foot_div p
+        {
+            color: #161a27;
+            display:block;
+            width: 80%;
+            margin: 0;
+        }
+
+        .foot_div
+        {
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: wrap column;
+            align-items:baseline;
+            align-content: center;
+            margin: 20px;
+        }
+
+        footer div:nth-child(1){
+          grid-column: 1;
+          grid-row: 1;
+      }
+      footer div:nth-child(2){
+          grid-column: 2;
+          grid-row: 1;
+      }
+      footer div:nth-child(3){
+          grid-column: 3;
+          grid-row: 1;
+      }
+      footer div:nth-child(4){
+          grid-column: 4;
+          grid-row: 1;
+      }
+      footer div:nth-child(5){
+          grid-column: 1 / span 4;
+          grid-row: 2;
+      }
+
+
+
+
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+  background-color: #274472;
+  width:100%;
+  display:block;
+  float:center;
+  text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    
+  text-align: left; 
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+a:active{
+    color: #274472;
+    background-color:#B1D4E0;
+}
+
+.menu__item {
+    display: block;
+    color: #B1D4E0;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #000;
+}
+
+
+
+
+.dark {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.dark .btn-gradient {
+  color: rgba(255,255,255,.54);
+  box-shadow: 0 0 1px rgba(255,255,255,0.54);
+}
+.dark .btn-gradient:hover {
+  color: #fff;
+}
+
+.btn-gradient {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+.btn-gradient i {
+  font-size: 30px;
+  line-height: 2.1;
+  vertical-align: middle;
+}
+.btn-gradient.rounded {
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.54);
+}
+@keyframes Gradient {
+  0% {
+      background-position: 50%;
+  }
+  50% {
+     background-position: 100% 50%;
+ }
+ 100% {
+     background-position: 0 50%;
+ }
+}
+.dark .btn-gradient.facebook:hover {
+  box-shadow: 0 5px 8px rgba(26,35,126,0.50);
+  background: #3949ab;
+  background: linear-gradient(to right,#3949ab 0%,#2196f3 100%);
+  background-size: 400%;
+  animation: Gradient 1s ease infinite;
+}
+.dark .btn-gradient.google-plus:hover {
+ box-shadow: 0 5px 8px rgba(244,67,54,0.50);
+ background: #f44336;
+ background: linear-gradient(to right,#f44336 0%,#ff1744 100%);
+ background-size: 400%;
+ animation: Gradient 1s ease infinite;
+}
+.dark .btn-gradient.instagram:hover {
+ box-shadow: 0 5px 8px rgba(63,81,181,0.50);
+ background: #ffc107;
+ background: linear-gradient(to right,#ffc107 0%,#f50057 50%,#3f51b5 100%);
+ background-size: 400%;
+ animation: Gradient 1s ease infinite;
+}
+.dark .btn-gradient.twitter:hover {
+ box-shadow: 0 5px 8px rgba(33,150,243,0.50);
+ background: #00bcd4;
+ background: linear-gradient(to right,#00bcd4 0%,#2196f3 100%);
+ background-size: 400%;
+ animation: Gradient 1s ease infinite;
+}
+.dark .btn-gradient.linkedin:hover {
+ box-shadow: 0 5px 8px rgba(3,169,244,0.50);
+ background: #0288d1;
+ background: linear-gradient(to right,#0288d1 0%,#2196f3 100%);
+ background-size: 400%;
+ animation: Gradient 1s ease infinite;
+}
+
+
+@media (max-width: 768px)
+{   
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 19px;
+    width: 30vw;;
+    height: 100%;
+    margin: 0;
+    margin-top: 124px;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #274472;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+
+    background-color: #274472;
+    display: flex; 
+    align-items: center;  
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 60px; /*по ширине кнопки расположены три полосы span*/
+    height: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*составляющие кнопки меню мобилок*/
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+    background-color: #ffffff; /*цвет полос, составляющих кнопку меню мобилок-->*/
+}
+
+.menu__btn > span::before { /*верхняя полосочка*/
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {/*нижняя полосочка*/
+  content: '';
+  top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span { /*разворот полоски после нажатия*/
+transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before { /*разворот полоски после нажатия*/
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box { /*кнопка меню становится видимой*/
+    visibility: visible;
+    left: 5;
+  }
+
+  .card {
+    display: block;
+
+    background-color: #41729F;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  footer
+  {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(4, 200px),100px;
+      gap: 0;
+  }
+  .foot_div
+  {
+      margin:2px 20px;
+  }
+  .foot_div h3{
+      font-size: 1em;
+  }
+  .foot_div p, .foot_div a{
+      font-size: 0.7em;
+  }
+  footer div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+footer div:nth-child(2){
+    grid-column: 1;
+    grid-row: 2;
+}
+footer div:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}
+footer div:nth-child(4){
+    grid-column: 1;
+    grid-row: 4;
+}
+footer div:nth-child(5){
+    grid-column: 1;
+    grid-row: 5;
+}
+}
+
+@media (min-width:768px) and (max-width: 1000px){
+  footer
+  {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 250px),140px;
+  }
+
+  .foot_div h3{
+      font-size: 1.2em;
+  }
+  footer div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+footer div:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+footer div:nth-child(3){
+    grid-column: 1;
+    grid-row: 2;
+}
+footer div:nth-child(4){
+    grid-column: 2;
+    grid-row: 2;
+}
+footer div:nth-child(5){
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+}
+
+
+.d2{
+  box-sizing: border-box;
+  background-color: rgba(134, 180, 229, 0.692);
+  border: 10px solid rgba(222, 246, 255, 0.699);
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+      
+section{
+  min-height: 150px;
+  display: block;
+}
+
+section h4{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.links,.notif,.close-notif,.create-list{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-list{
+  width: 20%;
+  background-color: #274472;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  padding: 10px 30px;
+}
+
+.area{
+  width: 600px;
+  height: 400px;
+  background-color: rgba(155, 196, 255, 0.683);
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 3px solid rgb(18, 9, 102);
+  position: relative;
+}
+
+.area img{
+  position: absolute;
+}
+
+.where-click{
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}
+
+
+.notif__inner{
+  /* visibility: hidden; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.notifs .notif__btn{
+  border: none;
+  background: none;
+  position: relative;
+  display: inline-block;
+}
+
+.notifs .notif__btn i{
+  font-size: 46px;
+}
+
+.notif__counter{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding: 0px 6px;
+  background:rgb(137, 231, 255);
+  border-radius: 50%;
+}

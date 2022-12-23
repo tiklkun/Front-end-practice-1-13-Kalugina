@@ -1,0 +1,535 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Audiowide";
+  padding: 10px;
+  color: #B1D4E0;
+  background: #5885AF;
+}
+
+header {
+  z-index:100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #41729F;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/*селектор класса (специфицирует элемент, маркированный нами как класс с данным названием. несколько элементов могут быть одного класса)*/
+.wrap-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header a { /*отвечает за навигацию*/
+  color: #000;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 10px;
+  background-color: #274472;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+  padding: 0%;
+  position:relative;
+  top:5px;
+  }
+
+
+.row {
+  display: flex;
+
+}
+
+.leftcolumn {   
+  flex-shrink: 3;
+  flex-direction: column;
+  width: auto;
+  flex: 2;
+}
+
+.rightcolumn {
+  flex-direction: column;
+  width: auto;
+  flex: 1;
+  padding-left: 20px;
+}
+
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #41729F;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #41729F;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #274472;
+  margin-top: 20px;
+}
+
+.footer a {
+  display: block;
+}
+
+mark{
+  background-color:#B1D4E0;
+}
+
+.gallery > p {
+  color: #B1D4E0;
+}
+
+a:visited:not(li a) {
+  color: #111
+}
+
+h3 + dl, p {
+  color: #274472;
+}
+
+#imgtxt {
+  float: right;
+}
+
+label{
+  color: #B1D4E0;
+  display: block;
+}
+
+input:focus{
+  outline: none;
+  background: rgb(240, 240, 240);
+  text-decoration: none;
+  border-color: rgb(193, 193, 193);
+  color: #274472;
+}
+
+input{
+  display: block;
+  width: 90%;
+  height: 4vh;
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+.input-file {
+  position: relative;
+  width: 15vw;
+  color: #274472;
+  margin: 20px;
+}
+.input-file > span {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  height: 5vh;
+  border-radius: 8px;
+  border: 2px solid rgba(218, 221, 220, 1);
+  padding: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  z-index: 5;
+}
+.input-file > input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+/**/
+
+fieldset{
+  width: 60vw;
+  margin: 3vw 4vh;
+  color: #B1D4E0;
+  margin-left: 20px;
+}
+
+fieldset > label {
+  float: left;
+  width: 10vw;
+  margin: 1vw 4vh;
+  font-size: 1em;
+}
+
+.inp {
+  width: 50%;
+  height: 3vh;
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+textarea{
+  width:90%;
+  margin-top: 10px;
+  margin-left: 50px;;
+}
+
+select{
+  width: 10vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+::placeholder {
+  font-weight: bold;
+  opacity: .5;
+  color: #274472;
+}
+
+input[type=submit]
+{
+  border-radius: 7px;
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #000000;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.check
+{
+  position: relative;
+  left: 0;
+}
+
+.custom-checkbox{
+  position: absolute;
+  top: 930px;
+
+}
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sub{
+  position: relative;
+  height: 15%;
+  width:15%;
+  background-color: #274472; 
+  border: none;
+  color: #B1D4E0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2{
+  width:50%;
+  background-color: #274472; 
+  border: none;
+  color: #B1D4E0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.check{
+  margin-top: 30px;
+}
+
+/* ======================================
+Responsive Image gallery Style rules
+======================================*/
+
+.container {
+  padding: 40px 5%;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.heading-text span {
+  font-weight: 100;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  /* Mobile first */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* overlay styles */
+
+.image-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-item:hover .overlay {
+  transform: scale(1);
+}
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+  background-color: #274472;
+  width:100%;
+  display:block;
+  float:center;
+  text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    
+  text-align: left; 
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+a:active{
+    color: #274472;
+    background-color:#B1D4E0;
+}
+
+.menu__item {
+    display: block;
+    color: #B1D4E0;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #000;
+}
+
+@media (max-width: 600px)
+{
+  .row {
+    flex-direction: column;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 19px;
+    width: 30vw;;
+    height: 100%;
+    margin: 0;
+    margin-top: 124px;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #274472;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+
+    background-color: #274472;
+    display: flex; 
+    align-items: center;  
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 60px; /*по ширине кнопки расположены три полосы span*/
+    height: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*составляющие кнопки меню мобилок*/
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+    background-color: #ffffff; /*цвет полос, составляющих кнопку меню мобилок-->*/
+}
+
+.menu__btn > span::before { /*верхняя полосочка*/
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {/*нижняя полосочка*/
+  content: '';
+  top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span { /*разворот полоски после нажатия*/
+transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before { /*разворот полоски после нажатия*/
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box { /*кнопка меню становится видимой*/
+    visibility: visible;
+    left: 5;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background-color: #41729F;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .rightcolumn {
+    flex-direction: column;
+    width: auto;
+  }
+
+  textarea{
+    width:90%;
+    margin-top: 10px;
+    margin-left: 25px;;
+  }
+
+  .custom-checkbox{
+    position: absolute;
+    top: 870px;
+    left: 150px;
+  }
+
+  select{
+    width: 20vw;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .input-file {
+    position: relative;
+    color: #274472;
+  }
+
+  #sub{
+    position: relative;
+    height: 55%;
+    width:45%;
+    background-color: #274472; 
+    border: none;
+    color: #B1D4E0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .input-file {
+    position: relative;
+    width: 50vw;
+    color: #274472;
+    margin: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .image-gallery {
+    flex-direction: row;
+  }
+}
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>tiklkun art portfolio</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\tiklk\Documents\uni\ркчир\пр1\space-au-akira-no-sign_cropped.ico">
+</head>
+
+<body>
+    <header>
+        <p class= "logoimg" style="text-align:center;">
+            <div class="wrap-logo" style="align-self: center;">
+                <img id = "logo" width="160" src="C:\Users\tiklk\Documents\uni\ркчир\пр2\logo.png">
+            </div>
+        </p>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span> 
+            </label>
+            
+            <ul class="menu__box">
+              <li><a class="menu__item" href="Art portfolio 4.html">About</a></li>
+              <li><a class="menu__item" href="Art portfolio 4.html">Gallery</a></li>
+              <li><a class="menu__item" href="commissions page.html">Commissions</a></li>
+              <li><a class="menu__item" href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    
+      
+    <main>
+    <div class="row">
+        <article>
+            <div class="leftcolumn">
+                <div class="form">
+                    <h2><a name = "commissions">Place your order</a></h2>
+                    <h5>Please fill this form to place your order</h5>
+                    <form name="form1" method="post">
+                        <label>Name <input type="text" name="name"  placeholder="Put your name here" required="true"></label>
+                        <label>E-mail <input type="email" name="email"></label>
+                        <label>Phone Number <input type="tel" name="phone" pattern="[0-9]{11}"></label>
+                        <label>Order date <input type="datetime-local" name="date" max="2090-10-07T20:20" min="1904-10-06T20:20"></label>
+                        <label>Password <input type="password" name="passwd" required="true"></label>
+                        <label>Tell more about your order <textarea name="about" rows="10" cols="40" maxlength="200" minlength="30" 
+                            placeholder="Despribe details of your order here" required="true"></textarea>
+                        </label>
+                    </form>
+                
+                    <form name="form2" method="post">
+                        <label class="input-file">
+                            <input type="file" name="file" class="input_file">
+                            <span>Choose file...</span>
+                        </label>
+                    </form>
+                
+                    <div>
+                        <label class="check" for="agree">I read and agree with Terms of Use</label>
+                        <input type="checkbox" class="custom-checkbox" id="agree" name="agree" value="yes">
+                    </div>
+                    <form>
+                        <label>Commission type
+                            <select id="znak" name="znak_zod" multiple required="true" size="2">
+                                <option>Profile icon</option>
+                                <option>Portrait</option>
+                                <option>Emotes</option>
+                                <option>Half-body</option>
+                                <option>Full-body</option>
+                                <option>Illustration</option>
+                            </select>
+                        </label>
+                        <input class="button2" id="sub" type="submit" name="sub">
+                    </form>
+                
+                    <fieldset> 
+                        <legend>Additional</legend>
+                        <label>Animals<input class="inp" type="radio" name="radio_1" ></label>
+                        <label>Detailed clothes<input class="inp" type="radio" name="radio_2"></label>
+                        <label>Robots<input class="inp" type="radio" name="radio_3"></label>
+                        <label>Cars<input class="inp" type="radio" name="radio_4"></label>
+                        <label>Background<input class="inp" type="radio" name="radio_5"></label>
+                        <label>Else<input class="inp" type="radio" name="radio_6"></label>
+                    </fieldset>
+                </div>
+            </div>
+        </article>
+        <div class="rightcolumn">
+
+          <div class="card">
+            <h3><a name = "about">About Me</a></h3>
+            <p><mark>anime</mark> <i>digital artist</i>, 19 years old<br><b>MIREA student</b>, <u>program engineering</u></p>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <img src="C:\Users\tiklk\Documents\uni\ркчир\пр2\icons8-twitter-50.png" alt="twitter" usemap="#twitter">
+            <img src="C:\Users\tiklk\Documents\uni\ркчир\пр2\icons8-patreon-50.png" alt="boosty" usemap="#boosty">
+            <img src="C:\Users\tiklk\Documents\uni\ркчир\пр2\icons8-vk-circled-50.png" alt="VK" usemap="#VK">
+
+            <map name="twitter">
+                <area shape="circle" coords="25,25,25" alt="twitter" href="https://twitter.com/tiklkun">
+            </map>
+            <map name="boosty">
+                <area shape="circle" coords="25,25,25" alt="boosty" href="https://boosty.to/tiklkun">
+            </map>
+            <map name="VK">
+                <area shape="circle" coords="25,25,25" alt="VK" href="https://vk.com/akemi_imai">
+            </map>
+
+        </div>
+        </div>
+        
+  
+      </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+        
+        <div class="frow">
+        <ul>
+        <li><a href="tel:89122360085">Contact us</a></li>
+        <li><a href="mailto:hannymattony2014@gmail.com">Email</a></li>
+        </ul>
+        </div>
+        
+        <div class="frow">
+        tiklkun Copyright © 2022 tiklkun - All rights reserved || Designed By: tiklkun
+        </div>
+        </div>
+        </footer>
+
+</body>
+</html>
